@@ -1,0 +1,137 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: 0.3;
+  cursor: pointer;
+  border: none;
+}
+
+.searchmodal__input {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px;
+  border-bottom: 1px solid rgb(143, 144, 144);
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  color: #444242;
+  font-size: 17px;
+}
+
+.editchannel_textarea {
+  max-height: 230px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  height: 125px;
+  width: calc(100% - 30px);
+  height: 125px;
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-size: 15px;
+  color: #1d1c1d;
+  line-height: 23px;
+  border-radius: 6px;
+  border: 1px solid #d4d6da;
+  padding: 12px 15px;
+  margin-top: 17px;
+  resize: none;
+}
+
+.edit-channel_modal {
+  background: transparent !important;
+}
+.edit-channel {
+  width: 470px;
+  background: #fff;
+  box-shadow: 0 20px 60px 0 rgba(6, 8, 37, 0.1);
+  border-radius: 6px;
+  border: 1px solid #e2e2e2;
+  padding: 23px 24px 25px;
+}
+
+.edit-channel h2 {
+  font-family: Helvetica Neue;
+  font-weight: 600;
+  font-size: 22px;
+  color: #1d1c1d;
+}
+
+.edit-channel p {
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-size: 15;
+  color: #131313;
+  margin-top: 14px;
+}
+
+.edit-channel footer {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.edit-channel footer button {
+  height: 36px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.edit-channel footer button:hover {
+  opacity: 0.8;
+}
+
+.edit-channel footer button.save {
+  color: #fff;
+  min-width: 80px;
+  background: #34378b;
+}
+
+.edit-channel footer button.cancel {
+  color: #1d1c1d;
+  line-height: 37px;
+  border: 1px solid #bababa;
+  margin-left: 10px;
+}

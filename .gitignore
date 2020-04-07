@@ -1,0 +1,37 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+.package-lock.json
+
+# misc
+.DS_Store
+.env
+.idea
+*.map
+dist
+build
+tmp
+logs
+*.log
+migrations/
+*.db
+npm-debug.log*
+*.pid
+*.seed
+**/node_modules
+.DS_Store
+.next/%
+.next
+frontend/.next/
+backend/.env
+backend/package-lock.json
+backend/src/schema.graphql
+backend/generated/nexus-typegen.ts
+backend/yarn.lock
+frontend/yarn.lock
