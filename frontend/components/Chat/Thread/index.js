@@ -99,11 +99,6 @@ const ThreadRightBar = ({ message, onClose, onCopyLink, scrollMessageId }) => {
             </S.Header>
             <S.Content ref={scrollView}>
               <Message message={message} isThread noActions className="parent-message" />
-              {/*
-              <S.ReplyNumber>
-                <span>{`${message.children.length} replies`}</span>
-              </S.ReplyNumber>
-              */}
               <S.MessageList>
                 {message.children.map((children, index, list) => {
                   const isDirectLink = scrollMessageId === children.id;

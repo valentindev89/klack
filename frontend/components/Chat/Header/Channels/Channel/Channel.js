@@ -1,5 +1,3 @@
-// import { useContext } from 'react';
-// import { UserContext } from 'context/UserContext';
 import { useRouter } from 'next/router';
 import { COMPANY_NAME } from 'utils/config';
 import { useKeyboardShortcut } from 'hooks';
@@ -14,7 +12,6 @@ const channelsShortcutMap = {
 };
 
 export default ({ channel, index, children }) => {
-  // const { user } = useContext(UserContext);
 
   const {
     query: { community: communityUrl, channel: channelUrl },

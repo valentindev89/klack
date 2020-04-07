@@ -3,7 +3,7 @@ import { UserContext } from 'context/UserContext';
 import { useRouter } from 'next/router';
 import { useMutation } from '@apollo/react-hooks';
 import { Mention } from 'react-mentions';
-import { useKeyboardShortcut, useEscapeToClose } from 'hooks';
+import { useEscapeToClose } from 'hooks';
 import { throttle } from 'lodash';
 
 import { COMPANY_NAME } from 'utils/config';
@@ -13,7 +13,6 @@ import { UploadManagerContext } from 'context/UploadManager';
 
 import docPreview from 'public/icons/document-preview.png';
 import emojiIcon from 'public/icons/smile.svg';
-// import addAtachmentSVG from 'public/icons/add-img.svg';
 
 import AttachmentItem from './AttachmentItem';
 import * as S from './styled';
@@ -30,9 +29,6 @@ const InputComponent = ({
     push,
   } = useRouter();
 
-  // useKeyboardShortcut({
-  //   T: () => document.getElementById('vs-input').focus(),
-  // });
   useEscapeToClose(() => document.getElementById('vs-input').blur());
 
   const [body, setBody] = useState('');
@@ -146,10 +142,6 @@ const InputComponent = ({
     }
   };
 
-  // const handleFileInput = ({ target }) => {
-  //   handleFileAdd(target.files);
-  // };
-
   const removeAttachmentFromList = number => {
     setAttachmentPreviews(attachmentPreviews.filter((el, i) => i !== number));
     setAttachments(attachments.filter((el, i) => i !== number));
@@ -181,17 +173,6 @@ const InputComponent = ({
         <use xlinkHref={`${emojiIcon}#icon-smile`} />
       </S.ReactionIcon>
       <S.InputWrapper>
-        {/*
-            <label htmlFor="comment-image" style={{ display: 'flex' }}>
-              <S.AddAttachmentIcon>
-                <use xlinkHref={`${addAtachmentSVG}#icon-add-img`} />
-              </S.AddAttachmentIcon>
-              <S.HiddenFileInput
-                onChange={handleFileInput}
-                style={{ display: 'none' }}
-              />
-            </label>
-            */}
         <S.Input
           id="vs-input"
           placeholder={placeholder || 'What’s happening?'}
@@ -230,22 +211,6 @@ const InputComponent = ({
             )}
           />
         </S.Input>
-
-        {/*
-          <S.Actions>
-          <S.AttachButton />
-          <S.EmojiButton
-            className="chat-input__emoji"
-            onClick={() => setShowEmojiPicker(!showEmojiPicker)}
-          >
-            <Picker
-              onSelect={() => {}}
-              style={{ display: showEmojiPicker ? 'block' : 'none' }}
-              emojisToShowFilter={emoji => emojiNames.indexOf(emoji.name) > -1}
-            />
-          </S.EmojiButton>
-          </S.Actions>
-        */}
       </S.InputWrapper>
       {loggedUser ? (
         body !== '' && <S.SendButton onClick={handleSendMessage}>Send</S.SendButton>

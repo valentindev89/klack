@@ -2,7 +2,6 @@ import { useRouter } from 'next/router';
 import { COMPANY_NAME } from 'utils/config';
 
 import Popup from 'components/UI/Popup';
-// import { PlusIcon } from 'components/UI/Icons';
 import plusIcon from 'public/icons/plus3.svg';
 
 import * as S from './MorePopup.styled';

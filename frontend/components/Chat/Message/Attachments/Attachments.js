@@ -1,9 +1,5 @@
-// Temp: Prettier bug
 /* eslint-disable react/jsx-indent */
 import { awsUrl } from 'utils/helper';
-
-// TODO: refactor igor shit. wrong styles
-
 import AttachmentItem from './Attachment/Item';
 import AttachmentImage from './Attachment/Image';
 import AttachmentRemote from './Attachment/Remote';

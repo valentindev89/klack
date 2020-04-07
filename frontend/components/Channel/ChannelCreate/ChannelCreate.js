@@ -114,7 +114,6 @@ const CreateChannel = () => {
                   name="button"
                   disabled={isSubmitting}
                   style={{
-                    // position: 'absolute',
                     right: 22,
                     marginTop: 12,
                     marginBottom: 16,

@@ -1,18 +1,9 @@
-import { useEffect } from 'react';
 import { useKeyboardShortcut } from 'hooks';
-
-// Refactor: CloseIcon
 import closeIcon from 'public/icons/close.svg';
 import { SearchIcon } from 'components/UI/Icons';
 import * as S from './Search.styled';
 
 const SearchInput = ({ show, close, value, onChange }) => {
-  // Do: input ref
-  useEffect(() => {
-    if (show) {
-      // input.ref.focus();
-    }
-  }, [show]);
 
   return (
     <S.SearchPanel show={show}>
@@ -32,8 +23,6 @@ const SearchInput = ({ show, close, value, onChange }) => {
 };
 
 export default ({ searchString, setSearchString, isSearch, setSearch }) => {
-  // const [searchString, setSearchString] = useState('');
-  // const [isSearch, setSearch] = useState(false);
 
   useKeyboardShortcut({
     F: () => setSearch(!isSearch),

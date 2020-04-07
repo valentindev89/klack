@@ -23,9 +23,3 @@ export const Channel = styled.li`
     opacity: 0.85;
   }
 `;
-// color: ${props =>
-//   props.active
-//     ? props.theme.channelActive
-//     : props.unread
-//     ? props.theme.channelUnread
-//     : 'blue'};

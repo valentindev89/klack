@@ -7,17 +7,3 @@ export default ({ member }) => (
     <S.Status online={member.isOnline} />
   </S.ListItem>
 );
-
-// export default ({ member }) => (
-//   <S.Member>
-//     <S.Avatar src={member.image} name={member.username}>
-//       <S.Status>
-//         <S.OnlineStatus online={member.isOnline} />
-//       </S.Status>
-//     </S.Avatar>
-//     <S.Info>
-//       <S.Name>{member.fullname}</S.Name>
-//       <S.Username>{member.username}</S.Username>
-//     </S.Info>
-//   </S.Member>
-// );

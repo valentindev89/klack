@@ -2,7 +2,6 @@ import { withTheme } from 'styled-components';
 import ContentLoader from 'react-content-loader';
 import * as S from './ChatBody.styled';
 
-// const ChatBodyPlaceholder = () => <div />;
 const ChatBodyPlaceholder = () => (
   <S.Container style={{ paddingLeft: 23, paddingTop: 16 }}>
     <MessagePlaceholder />

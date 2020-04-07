@@ -50,11 +50,6 @@ const CreateCommunity = () => {
       .matches(/^\S+$/, 'Must contain no spaces')
       .matches(/^[^.]+$/, 'Must contain no dots')
       .required('Name is required'),
-    // url: yup
-    //   .string()
-    //   .matches(/^([a-zA-Z0-9.-]+)$/, 'Must not contain special characters')
-    //   .required('Url is required'),
-    // image: yup.string().required('Image is required'),
   });
 
   const handleImageInput = async e => {
@@ -147,16 +142,6 @@ const CreateCommunity = () => {
                 placeholder="Why UX and UI should remain separate"
                 component={Input}
               />
-              {/*
-              <Field
-                type="text"
-                name="url"
-                label="Workspace URL"
-                placeholder="community"
-                component={Input}
-                validate={() => {}}
-              />
-              */}
               <ButtonPrimary
                 type="submit"
                 name="button"

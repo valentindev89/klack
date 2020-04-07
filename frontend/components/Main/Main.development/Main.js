@@ -8,7 +8,7 @@ const openSound = 'widget-open';
 const closeSound = 'widget-close';
 
 export default () => {
-  const widgetUrl = `${process.env.FRONTEND_URL}/vs/general/general`;
+  const widgetUrl = `${process.env.FRONTEND_URL}/klack/general/general`;
   const [widgetOpened, setWidgetOpened] = useState(false);
 
   const playSound = sound => {

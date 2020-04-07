@@ -1,4 +1,3 @@
-// Refactor: createUsersList
 import { useContext } from 'react';
 import { UserContext } from 'context';
 import { useMutation } from '@apollo/react-hooks';
