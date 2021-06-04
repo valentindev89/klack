@@ -4,7 +4,7 @@
   "description": "klack",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/valentindev89/klack"
+    "url": "https://gitlab.com/wuyuebiz/klack"
   },
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "lint": "eslint ./components/** ./pages/** ./apis/** ./context/** ./hooks/** ./styles/** ./utils/** -c .eslintrc.js --fix --ext js,jsx"
   },
   "keywords": [],
-  "author": "Valentin",
+  "author": "Wuyue",
   "license": "ISC",
   "dependencies": {
     "@apollo/react-hooks": "3.1.3",
